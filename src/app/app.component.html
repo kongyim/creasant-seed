@@ -4,11 +4,10 @@
     Welcome to {{ title }}!
   </h1>
 </div>
-new user <input type="text" [(ngModel)]="newName"/><button (click)="onNewUser(newName)">create</button>
-<ul>
-  <li *ngFor="let user of userList">
-    <app-user [data]="user"></app-user>
-  </li>
+<nav>
+  <a routerLink="/">Home</a>
+  <a routerLink="/user">User</a>
+</nav>
 
-</ul>
+<router-outlet></router-outlet>
 
