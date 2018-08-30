@@ -14,7 +14,8 @@ app.use(cors())
 app.get('/api/users', (req, res, next)=> {
   let userList = [
     {
-      name: 'kong'
+      name: 'kong',
+      birthday: new Date('2011-11-12')
     },
     {
       name: 'alex'

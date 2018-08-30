@@ -12,6 +12,7 @@ import { WelcomePageComponent } from './pages/welcome-page/welcome-page.componen
 import { UserPageComponent } from './pages/user-page/user-page.component';
 
 import { UserService } from './services/user.service';
+import { CustomDatePipe } from './pipes/custom-date.pipe';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { UserService } from './services/user.service';
     AppComponent,
     UserComponent,
     WelcomePageComponent,
-    UserPageComponent
+    UserPageComponent,
+    CustomDatePipe
   ],
   imports: [
     BrowserModule,
