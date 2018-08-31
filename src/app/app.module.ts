@@ -9,7 +9,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { RouterModule } from '@angular/router';
 import { HttpModule } from "@angular/http";
 import { WelcomePageComponent } from './pages/welcome-page/welcome-page.component';
-import { UserPageComponent } from './pages/user-page/user-page.component';
+import { UsersPageComponent } from './pages/users-page/users-page.component';
 
 import { UserService } from './services/user.service';
 import { CustomDatePipe } from './pipes/custom-date.pipe';
@@ -20,7 +20,7 @@ import { CustomDatePipe } from './pipes/custom-date.pipe';
     AppComponent,
     UserComponent,
     WelcomePageComponent,
-    UserPageComponent,
+    UsersPageComponent,
     CustomDatePipe
   ],
   imports: [

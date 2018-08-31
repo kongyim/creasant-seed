@@ -1,0 +1,10 @@
+<p>
+  users-page works!
+</p>
+new user <input type="text" [(ngModel)]="newName"/><button (click)="onNewUser($event)">create</button>
+<ul>
+  <li *ngFor="let user of (userList | async)">
+    <app-user [data]="user"></app-user>
+  </li>
+
+</ul>

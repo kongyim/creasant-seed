@@ -3,11 +3,11 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 
 import { WelcomePageComponent } from './pages/welcome-page/welcome-page.component';
-import { UserPageComponent } from './pages/user-page/user-page.component';
+import { UsersPageComponent } from './pages/users-page/users-page.component';
 
 const routes: Routes = [
   { path: '', component: WelcomePageComponent },
-  { path: 'user', component: UserPageComponent }
+  { path: 'users', component: UsersPageComponent }
 ];
 
 @NgModule({

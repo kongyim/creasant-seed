@@ -25,4 +25,10 @@ export class UserService {
     )
   }
 
+  addUsers(user) {
+    return this.http.post('http://localhost:8080/api/users', user).pipe(
+      map(data=> data.json())
+    )
+  }
+
 }
