@@ -29,15 +29,15 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ```
 npm install -g @angular/cli
 
+ng new creasant-seed
+
 ng set defaults.styleExt scss
 
-ng new creasant-angular4-seed
-
-ng generate service Test
-
-ng generate component Hero
+ng generate component user
 
 ng generate module app-routing --flat --module=app
 
 ng generate component welcome-page
+
+ng generate service test --module=app
 ```
