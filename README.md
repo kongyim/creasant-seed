@@ -26,18 +26,45 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
+
+install angular command line tools
 ```
 npm install -g @angular/cli
+```
 
+set default styling to scss
+```
+ng set defaults.styleExt scss --global
+```
+
+create new angular porject
+```
 ng new creasant-seed
+cd creasant-seed
+```
 
-ng set defaults.styleExt scss
+generate app-user component
+```
+ng generate component components/user
+```
 
-ng generate component user
-
+generate routing module
+```
 ng generate module app-routing --flat --module=app
+```
 
-ng generate component welcome-page
+generate page component
+```
+ng generate component pages/welcome-page
+ng generate component pages/users-page
+```
 
-ng generate service test --module=app
+generate user service
+```
+ng generate service services/user --module=app
+```
+
+generate custom date pipe
+```
+ng generate pipe pipes/custom-pipe
 ```
